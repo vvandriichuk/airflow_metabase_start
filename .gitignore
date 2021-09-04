@@ -1,5 +1,6 @@
 # System
 airflow/upload-data/*
+!airflow/upload-data/others
 
 # Celery
 celerybeat-*
