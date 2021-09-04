@@ -8,7 +8,7 @@ celerybeat-*
 
 # Environments
 .venv
-.env
+airflow/.env
 env/
 venv/
 ENV/
