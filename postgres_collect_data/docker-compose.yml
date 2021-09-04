@@ -1,0 +1,36 @@
+version: '3'
+services:
+    pgadmin-compose:
+        image: dpage/pgadmin4
+        environment:
+            PGADMIN_DEFAULT_EMAIL: "test@gmail.com"
+            PGADMIN_DEFAULT_PASSWORD: "test123!"
+        ports:
+            - 16543:80
+        depends_on:
+            - postgres-collect_data
+
+    postgres-collect_data:
+        image: postgres:13-alpine
+        healthcheck:
+            test: [ "CMD", "pg_isready", "-q", "-d", "postgres", "-U", "test" ]
+            timeout: 45s
+            interval: 10s
+            retries: 10
+        restart: always
+        environment:
+            - POSTGRES_USER=test
+            - POSTGRES_PASSWORD=test
+            - POSTGRES_DB=test
+            - APP_DB_USER=test_collect_data
+            - APP_DB_PASS=test_collect_data
+            - APP_DB_NAME=test_collect_data
+            - PGDATA=/var/lib/postgresql/data_collect_data/
+        volumes:
+            - ./pgdata_collect_data:/var/lib/postgresql/data_collect_data/
+            - ./db:/docker-entrypoint-initdb.d/
+        ports:
+            - "5434:5432" # 5434 - это порт, который будет открыт на HOST (чтобы не было конфликтов с подключением в Постгрес выше) и 5432 - это порт, открытый на контейнере (на нем работает Постгрес)
+
+        expose:
+            -   5434
