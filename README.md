@@ -32,5 +32,11 @@ echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
     AIRFLOW_GID: 0
 ~~~
 
-Подробнее можете прочитать здесь: https://airflow.apache.org/docs/apache-airflow/2.1.3/docker-compose.yaml
+Подробнее можете прочитать здесь: https://airflow.apache.org/docs/apache-airflow/2.1.3/docker-compose.yaml и здесь https://www.bigdataschool.ru/blog/apache-airflow-installation.html
+
+После выполнения всех действий выше запустите команду в корне Вашего проекта:
+
+~~~
+bash run_docker.sh
+~~~
 
