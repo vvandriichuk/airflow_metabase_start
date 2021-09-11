@@ -1,0 +1,520 @@
+[2021-09-08 20:14:05,308] {processor.py:162} INFO - Started process (PID=34) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:14:05,310] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 20:14:05,312] {logging_mixin.py:109} INFO - [2021-09-08 20:14:05,312] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:14:05,339] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:14:06,912] {logging_mixin.py:109} INFO - [2021-09-08 20:14:06,912] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 20:15:09,221] {processor.py:162} INFO - Started process (PID=36) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:15:09,223] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 20:15:09,225] {logging_mixin.py:109} INFO - [2021-09-08 20:15:09,224] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:15:09,962] {logging_mixin.py:109} INFO - [2021-09-08 20:15:09,962] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 20:18:25,628] {processor.py:162} INFO - Started process (PID=36) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:18:25,631] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 20:18:25,633] {logging_mixin.py:109} INFO - [2021-09-08 20:18:25,633] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:18:25,659] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:18:26,519] {logging_mixin.py:109} INFO - [2021-09-08 20:18:26,519] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 20:18:26,521] {logging_mixin.py:109} WARNING - Exception ignored in: <function WeakValueDictionary.__init__.<locals>.remove at 0x7f406f03f430>
+[2021-09-08 20:18:26,521] {logging_mixin.py:109} WARNING - Traceback (most recent call last):
+[2021-09-08 20:18:26,523] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/weakref.py", line 103, in remove
+[2021-09-08 20:18:26,524] {logging_mixin.py:109} WARNING -     def remove(wr, selfref=ref(self), _atomic_removal=_remove_dead_weakref):
+[2021-09-08 20:18:26,525] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 586, in _exit_gracefully
+[2021-09-08 20:18:26,527] {logging_mixin.py:109} WARNING -     self.log.debug("Current Stacktrace is: %s", '\n'.join(map(str, inspect.stack())))
+[2021-09-08 20:18:26,528] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 1526, in stack
+[2021-09-08 20:18:26,529] {logging_mixin.py:109} WARNING -     return getouterframes(sys._getframe(1), context)
+[2021-09-08 20:18:26,530] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 1503, in getouterframes
+[2021-09-08 20:18:26,534] {logging_mixin.py:109} WARNING -     frameinfo = (frame,) + getframeinfo(frame, context)
+[2021-09-08 20:18:26,535] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 1473, in getframeinfo
+[2021-09-08 20:18:26,542] {logging_mixin.py:109} WARNING -     filename = getsourcefile(frame) or getfile(frame)
+[2021-09-08 20:18:26,544] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 708, in getsourcefile
+[2021-09-08 20:18:26,545] {logging_mixin.py:109} WARNING -     if getattr(getmodule(object, filename), '__loader__', None) is not None:
+[2021-09-08 20:18:26,546] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 745, in getmodule
+[2021-09-08 20:18:26,547] {logging_mixin.py:109} WARNING -     if ismodule(module) and hasattr(module, '__file__'):
+[2021-09-08 20:18:26,548] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 590, in _exit_gracefully
+[2021-09-08 20:18:26,549] {logging_mixin.py:109} WARNING -     sys.exit(os.EX_OK)
+[2021-09-08 20:18:26,550] {logging_mixin.py:109} WARNING - SystemExit: 0
+[2021-09-08 20:18:29,654] {logging_mixin.py:109} INFO - [2021-09-08 20:18:29,654] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-08 20:18:29,663] {logging_mixin.py:109} INFO - [2021-09-08 20:18:29,663] {dag.py:1852} INFO - Creating ORM DAG for example_dag_decorator
+[2021-09-08 20:18:29,670] {logging_mixin.py:109} INFO - [2021-09-08 20:18:29,670] {dag.py:2306} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-09-08 20:18:29,685] {processor.py:170} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 4.061 seconds
+[2021-09-08 20:18:38,090] {processor.py:162} INFO - Started process (PID=35) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:18:38,093] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 20:18:38,095] {logging_mixin.py:109} INFO - [2021-09-08 20:18:38,095] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:18:38,122] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:18:38,155] {logging_mixin.py:109} INFO - [2021-09-08 20:18:38,155] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-08 20:18:38,186] {logging_mixin.py:109} INFO - [2021-09-08 20:18:38,186] {dag.py:2306} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-09-08 20:18:38,205] {processor.py:170} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.120 seconds
+[2021-09-08 20:24:32,032] {processor.py:162} INFO - Started process (PID=36) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:24:32,035] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 20:24:32,036] {logging_mixin.py:109} INFO - [2021-09-08 20:24:32,036] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:24:32,055] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:24:33,127] {logging_mixin.py:109} INFO - [2021-09-08 20:24:33,127] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 20:26:08,932] {processor.py:162} INFO - Started process (PID=35) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:26:08,936] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 20:26:08,939] {logging_mixin.py:109} INFO - [2021-09-08 20:26:08,939] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:26:08,979] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:26:13,560] {logging_mixin.py:109} INFO - [2021-09-08 20:26:13,553] {dagbag.py:598} ERROR - Failed to write serialized DAG: /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 587, in _serialize_dag_capturing_errors
+    dag_was_updated = SerializedDagModel.write_dag(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/serialized_dag.py", line 120, in write_dag
+    if session.query(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3523, in scalar
+    ret = self.one()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3490, in one
+    ret = self.one_or_none()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3459, in one_or_none
+    ret = list(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3556, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3571, in _get_bind_args
+    return fn(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1142, in connection
+    return self._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.8/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 587, in _exit_gracefully
+    self.terminate()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 1195, in terminate
+    processor.terminate()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 236, in terminate
+    self._parent_channel.close()
+  File "/usr/local/lib/python3.8/multiprocessing/connection.py", line 177, in close
+    self._close()
+  File "/usr/local/lib/python3.8/multiprocessing/connection.py", line 361, in _close
+    _close(self._handle)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 587, in _exit_gracefully
+    self.terminate()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 1195, in terminate
+    processor.terminate()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 236, in terminate
+    self._parent_channel.close()
+  File "/usr/local/lib/python3.8/multiprocessing/connection.py", line 177, in close
+    self._close()
+  File "/usr/local/lib/python3.8/multiprocessing/connection.py", line 361, in _close
+    _close(self._handle)
+OSError: [Errno 9] Bad file descriptor
+[2021-09-08 20:26:13,566] {logging_mixin.py:109} INFO - [2021-09-08 20:26:13,566] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-08 20:26:13,623] {logging_mixin.py:109} INFO - [2021-09-08 20:26:13,623] {dag.py:2306} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-09-08 20:26:13,654] {processor.py:170} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 4.729 seconds
+[2021-09-08 20:26:44,293] {processor.py:162} INFO - Started process (PID=34) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:26:44,296] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 20:26:44,297] {logging_mixin.py:109} INFO - [2021-09-08 20:26:44,297] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:26:44,332] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:26:46,014] {logging_mixin.py:109} INFO - [2021-09-08 20:26:46,014] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 20:26:53,519] {processor.py:162} INFO - Started process (PID=34) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:26:53,522] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 20:26:53,523] {logging_mixin.py:109} INFO - [2021-09-08 20:26:53,523] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:26:53,546] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:26:58,811] {logging_mixin.py:109} INFO - [2021-09-08 20:26:58,811] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 20:35:10,729] {processor.py:162} INFO - Started process (PID=36) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:35:10,731] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 20:35:10,732] {logging_mixin.py:109} INFO - [2021-09-08 20:35:10,732] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:35:10,751] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:35:11,949] {logging_mixin.py:109} INFO - [2021-09-08 20:35:11,949] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 20:51:55,367] {processor.py:162} INFO - Started process (PID=35) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:51:55,370] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 20:51:55,372] {logging_mixin.py:109} INFO - [2021-09-08 20:51:55,371] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:51:55,396] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:51:55,750] {logging_mixin.py:109} INFO - [2021-09-08 20:51:55,750] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 20:57:19,088] {processor.py:162} INFO - Started process (PID=36) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:57:19,091] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 20:57:19,093] {logging_mixin.py:109} INFO - [2021-09-08 20:57:19,093] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:57:19,124] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:57:19,828] {logging_mixin.py:109} INFO - [2021-09-08 20:57:19,828] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 20:58:14,749] {processor.py:162} INFO - Started process (PID=34) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:58:14,751] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 20:58:14,754] {logging_mixin.py:109} INFO - [2021-09-08 20:58:14,754] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:58:14,792] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 20:58:15,280] {logging_mixin.py:109} INFO - [2021-09-08 20:58:15,280] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 20:59:54,317] {logging_mixin.py:109} INFO - [2021-09-08 20:59:54,317] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:01:41,837] {processor.py:162} INFO - Started process (PID=47) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:01:41,840] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:01:41,842] {logging_mixin.py:109} INFO - [2021-09-08 21:01:41,841] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:01:41,867] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:01:43,695] {logging_mixin.py:109} INFO - [2021-09-08 21:01:43,695] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:03:59,896] {processor.py:162} INFO - Started process (PID=35) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:03:59,899] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:03:59,900] {logging_mixin.py:109} INFO - [2021-09-08 21:03:59,900] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:03:59,921] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:04:01,180] {logging_mixin.py:109} INFO - [2021-09-08 21:04:01,180] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:11:30,194] {processor.py:162} INFO - Started process (PID=34) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:11:30,196] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:11:30,197] {logging_mixin.py:109} INFO - [2021-09-08 21:11:30,197] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:11:30,222] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:11:30,549] {logging_mixin.py:109} INFO - [2021-09-08 21:11:30,549] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-08 21:11:30,559] {logging_mixin.py:109} INFO - [2021-09-08 21:11:30,559] {dag.py:2306} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-09-08 21:11:30,571] {processor.py:170} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.381 seconds
+[2021-09-08 21:16:06,462] {processor.py:162} INFO - Started process (PID=35) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:16:07,091] {logging_mixin.py:109} INFO - [2021-09-08 21:16:07,091] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:21:03,077] {logging_mixin.py:109} INFO - [2021-09-08 21:21:03,077] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:22:53,679] {processor.py:162} INFO - Started process (PID=41) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:22:53,681] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:22:53,682] {logging_mixin.py:109} INFO - [2021-09-08 21:22:53,682] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:22:53,701] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:22:55,333] {logging_mixin.py:109} INFO - [2021-09-08 21:22:55,333] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:22:55,335] {logging_mixin.py:109} WARNING - Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0x7f232cd9f4c0>
+[2021-09-08 21:22:55,335] {logging_mixin.py:109} WARNING - Traceback (most recent call last):
+[2021-09-08 21:22:55,336] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/weakref.py", line 345, in remove
+[2021-09-08 21:22:55,337] {logging_mixin.py:109} WARNING -     def remove(k, selfref=ref(self)):
+[2021-09-08 21:22:55,338] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 588, in _exit_gracefully
+[2021-09-08 21:22:55,339] {logging_mixin.py:109} WARNING -     self.end()
+[2021-09-08 21:22:55,340] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 1204, in end
+[2021-09-08 21:22:55,342] {logging_mixin.py:109} WARNING -     kill_child_processes_by_pids(pids_to_kill)
+[2021-09-08 21:22:55,343] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/process_utils.py", line 194, in kill_child_processes_by_pids
+[2021-09-08 21:22:55,344] {logging_mixin.py:109} WARNING -     this_process = psutil.Process(os.getpid())
+[2021-09-08 21:22:55,345] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/__init__.py", line 326, in __init__
+[2021-09-08 21:22:55,346] {logging_mixin.py:109} WARNING -     self._init(pid)
+[2021-09-08 21:22:55,347] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/__init__.py", line 354, in _init
+[2021-09-08 21:22:55,347] {logging_mixin.py:109} WARNING -     self.create_time()
+[2021-09-08 21:22:55,348] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/__init__.py", line 710, in create_time
+[2021-09-08 21:22:55,349] {logging_mixin.py:109} WARNING -     self._create_time = self._proc.create_time()
+[2021-09-08 21:22:55,350] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+[2021-09-08 21:22:55,351] {logging_mixin.py:109} WARNING -     return fun(self, *args, **kwargs)
+[2021-09-08 21:22:55,352] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/_pslinux.py", line 1788, in create_time
+[2021-09-08 21:22:55,353] {logging_mixin.py:109} WARNING -     ctime = float(self._parse_stat_file()['create_time'])
+[2021-09-08 21:22:55,353] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+[2021-09-08 21:22:55,354] {logging_mixin.py:109} WARNING -     return fun(self, *args, **kwargs)
+[2021-09-08 21:22:55,355] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/_common.py", line 450, in wrapper
+[2021-09-08 21:22:55,356] {logging_mixin.py:109} WARNING -     return fun(self)
+[2021-09-08 21:22:55,357] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/_pslinux.py", line 1619, in _parse_stat_file
+[2021-09-08 21:22:55,358] {logging_mixin.py:109} WARNING -     data = f.read()
+[2021-09-08 21:22:55,359] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 590, in _exit_gracefully
+[2021-09-08 21:22:55,360] {logging_mixin.py:109} WARNING -     sys.exit(os.EX_OK)
+[2021-09-08 21:22:55,360] {logging_mixin.py:109} WARNING - SystemExit: 0
+[2021-09-08 21:22:55,449] {logging_mixin.py:109} INFO - [2021-09-08 21:22:55,449] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-08 21:22:55,461] {logging_mixin.py:109} INFO - [2021-09-08 21:22:55,461] {dag.py:2306} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-09-08 21:22:55,473] {processor.py:170} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 1.799 seconds
+[2021-09-08 21:23:21,394] {processor.py:162} INFO - Started process (PID=36) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:23:21,396] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:23:21,398] {logging_mixin.py:109} INFO - [2021-09-08 21:23:21,398] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:23:21,424] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:23:21,451] {logging_mixin.py:109} INFO - [2021-09-08 21:23:21,450] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-08 21:23:21,484] {logging_mixin.py:109} INFO - [2021-09-08 21:23:21,484] {dag.py:2306} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-09-08 21:23:21,501] {processor.py:170} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.112 seconds
+[2021-09-08 21:24:03,967] {processor.py:162} INFO - Started process (PID=34) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:24:03,970] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:24:03,972] {logging_mixin.py:109} INFO - [2021-09-08 21:24:03,971] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:24:03,996] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:24:06,016] {logging_mixin.py:109} INFO - [2021-09-08 21:24:06,016] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:24:06,018] {logging_mixin.py:109} WARNING - Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0x7f84081a44c0>
+[2021-09-08 21:24:06,018] {logging_mixin.py:109} WARNING - Traceback (most recent call last):
+[2021-09-08 21:24:06,019] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/weakref.py", line 345, in remove
+[2021-09-08 21:24:06,021] {logging_mixin.py:109} WARNING -     def remove(k, selfref=ref(self)):
+[2021-09-08 21:24:06,021] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 587, in _exit_gracefully
+[2021-09-08 21:24:06,023] {logging_mixin.py:109} WARNING -     self.terminate()
+[2021-09-08 21:24:06,024] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 1195, in terminate
+[2021-09-08 21:24:06,024] {logging_mixin.py:109} WARNING -     processor.terminate()
+[2021-09-08 21:24:06,025] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 233, in terminate
+[2021-09-08 21:24:06,026] {logging_mixin.py:109} WARNING -     self._process._popen.wait(5)  # type: ignore  # pylint: disable=protected-access
+[2021-09-08 21:24:06,027] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/popen_fork.py", line 47, in wait
+[2021-09-08 21:24:06,027] {logging_mixin.py:109} WARNING -     return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+[2021-09-08 21:24:06,028] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/popen_fork.py", line 27, in poll
+[2021-09-08 21:24:06,029] {logging_mixin.py:109} WARNING -     pid, sts = os.waitpid(self.pid, flag)
+[2021-09-08 21:24:06,029] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 590, in _exit_gracefully
+[2021-09-08 21:24:06,030] {logging_mixin.py:109} WARNING -     sys.exit(os.EX_OK)
+[2021-09-08 21:24:06,031] {logging_mixin.py:109} WARNING - SystemExit: 0
+[2021-09-08 21:24:06,167] {logging_mixin.py:109} INFO - [2021-09-08 21:24:06,167] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-08 21:24:06,180] {logging_mixin.py:109} INFO - [2021-09-08 21:24:06,180] {dag.py:2306} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-09-08 21:24:06,194] {processor.py:170} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 2.231 seconds
+[2021-09-08 21:26:06,431] {processor.py:162} INFO - Started process (PID=37) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:26:06,434] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:26:06,435] {logging_mixin.py:109} INFO - [2021-09-08 21:26:06,435] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:26:06,456] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:26:07,222] {logging_mixin.py:109} INFO - [2021-09-08 21:26:07,221] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:31:37,746] {processor.py:162} INFO - Started process (PID=45) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:31:37,749] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:31:37,750] {logging_mixin.py:109} INFO - [2021-09-08 21:31:37,750] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:31:37,773] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:31:38,739] {logging_mixin.py:109} INFO - [2021-09-08 21:31:38,739] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:32:10,018] {processor.py:162} INFO - Started process (PID=34) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:32:10,020] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:32:10,022] {logging_mixin.py:109} INFO - [2021-09-08 21:32:10,022] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:32:10,047] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:32:11,192] {logging_mixin.py:109} INFO - [2021-09-08 21:32:11,192] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:32:11,193] {logging_mixin.py:109} WARNING - Exception ignored in: <function WeakValueDictionary.__init__.<locals>.remove at 0x7f367683c430>
+[2021-09-08 21:32:11,193] {logging_mixin.py:109} WARNING - Traceback (most recent call last):
+[2021-09-08 21:32:11,194] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/weakref.py", line 103, in remove
+[2021-09-08 21:32:11,195] {logging_mixin.py:109} WARNING -     def remove(wr, selfref=ref(self), _atomic_removal=_remove_dead_weakref):
+[2021-09-08 21:32:11,195] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 588, in _exit_gracefully
+[2021-09-08 21:32:11,196] {logging_mixin.py:109} WARNING -     self.end()
+[2021-09-08 21:32:11,196] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 1204, in end
+[2021-09-08 21:32:11,197] {logging_mixin.py:109} WARNING -     kill_child_processes_by_pids(pids_to_kill)
+[2021-09-08 21:32:11,198] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/process_utils.py", line 194, in kill_child_processes_by_pids
+[2021-09-08 21:32:11,198] {logging_mixin.py:109} WARNING -     this_process = psutil.Process(os.getpid())
+[2021-09-08 21:32:11,199] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/__init__.py", line 326, in __init__
+[2021-09-08 21:32:11,199] {logging_mixin.py:109} WARNING -     self._init(pid)
+[2021-09-08 21:32:11,200] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/__init__.py", line 354, in _init
+[2021-09-08 21:32:11,200] {logging_mixin.py:109} WARNING -     self.create_time()
+[2021-09-08 21:32:11,201] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/__init__.py", line 710, in create_time
+[2021-09-08 21:32:11,202] {logging_mixin.py:109} WARNING -     self._create_time = self._proc.create_time()
+[2021-09-08 21:32:11,202] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+[2021-09-08 21:32:11,203] {logging_mixin.py:109} WARNING -     return fun(self, *args, **kwargs)
+[2021-09-08 21:32:11,204] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/_pslinux.py", line 1788, in create_time
+[2021-09-08 21:32:11,204] {logging_mixin.py:109} WARNING -     ctime = float(self._parse_stat_file()['create_time'])
+[2021-09-08 21:32:11,205] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+[2021-09-08 21:32:11,206] {logging_mixin.py:109} WARNING -     return fun(self, *args, **kwargs)
+[2021-09-08 21:32:11,207] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/_common.py", line 450, in wrapper
+[2021-09-08 21:32:11,207] {logging_mixin.py:109} WARNING -     return fun(self)
+[2021-09-08 21:32:11,208] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/psutil/_pslinux.py", line 1619, in _parse_stat_file
+[2021-09-08 21:32:11,209] {logging_mixin.py:109} WARNING -     data = f.read()
+[2021-09-08 21:32:11,210] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 590, in _exit_gracefully
+[2021-09-08 21:32:11,211] {logging_mixin.py:109} WARNING -     sys.exit(os.EX_OK)
+[2021-09-08 21:32:11,212] {logging_mixin.py:109} WARNING - SystemExit: 0
+[2021-09-08 21:32:11,403] {logging_mixin.py:109} INFO - [2021-09-08 21:32:11,403] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-08 21:32:11,414] {logging_mixin.py:109} INFO - [2021-09-08 21:32:11,413] {dag.py:2306} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-09-08 21:32:11,423] {processor.py:170} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 1.410 seconds
+[2021-09-08 21:32:29,010] {processor.py:162} INFO - Started process (PID=36) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:32:29,012] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:32:29,013] {logging_mixin.py:109} INFO - [2021-09-08 21:32:29,013] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:32:29,039] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:32:29,065] {logging_mixin.py:109} INFO - [2021-09-08 21:32:29,065] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-08 21:32:29,082] {logging_mixin.py:109} INFO - [2021-09-08 21:32:29,082] {dag.py:2306} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-09-08 21:32:29,095] {processor.py:170} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.090 seconds
+[2021-09-08 21:32:38,146] {processor.py:162} INFO - Started process (PID=34) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:32:38,148] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:32:38,150] {logging_mixin.py:109} INFO - [2021-09-08 21:32:38,150] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:32:38,173] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:32:38,192] {logging_mixin.py:109} INFO - [2021-09-08 21:32:38,191] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-08 21:32:38,212] {logging_mixin.py:109} INFO - [2021-09-08 21:32:38,211] {dag.py:2306} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-09-08 21:32:38,231] {processor.py:170} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.090 seconds
+[2021-09-08 21:33:09,383] {processor.py:162} INFO - Started process (PID=35) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:33:09,385] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:33:09,757] {logging_mixin.py:109} WARNING - --- Logging error ---
+[2021-09-08 21:33:09,758] {logging_mixin.py:109} WARNING - Traceback (most recent call last):
+[2021-09-08 21:33:09,760] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+[2021-09-08 21:33:09,760] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+[2021-09-08 21:33:09,762] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 587, in _exit_gracefully
+    self.terminate()
+[2021-09-08 21:33:09,762] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 1195, in terminate
+    processor.terminate()
+[2021-09-08 21:33:09,763] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 236, in terminate
+    self._parent_channel.close()
+[2021-09-08 21:33:09,764] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/connection.py", line 177, in close
+    self._close()
+[2021-09-08 21:33:09,764] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/connection.py", line 361, in _close
+    _close(self._handle)
+[2021-09-08 21:33:09,765] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 587, in _exit_gracefully
+    self.terminate()
+[2021-09-08 21:33:09,766] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 1195, in terminate
+    processor.terminate()
+[2021-09-08 21:33:09,766] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 236, in terminate
+    self._parent_channel.close()
+[2021-09-08 21:33:09,767] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/connection.py", line 177, in close
+    self._close()
+[2021-09-08 21:33:09,768] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/connection.py", line 361, in _close
+    _close(self._handle)
+[2021-09-08 21:33:09,768] {logging_mixin.py:109} WARNING - OSError: [Errno 9] Bad file descriptor
+[2021-09-08 21:33:09,769] {logging_mixin.py:109} WARNING - Call stack:
+[2021-09-08 21:33:09,770] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/bin/airflow", line 8, in <module>
+    sys.exit(main())
+[2021-09-08 21:33:09,771] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/__main__.py", line 40, in main
+    args.func(args)
+[2021-09-08 21:33:09,771] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+[2021-09-08 21:33:09,772] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/cli.py", line 91, in wrapper
+    return f(*args, **kwargs)
+[2021-09-08 21:33:09,772] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/cli/commands/scheduler_command.py", line 70, in scheduler
+    job.run()
+[2021-09-08 21:33:09,773] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/base_job.py", line 245, in run
+    self._execute()
+[2021-09-08 21:33:09,774] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/jobs/scheduler_job.py", line 690, in _execute
+    self.processor_agent.start()
+[2021-09-08 21:33:09,775] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 252, in start
+    process.start()
+[2021-09-08 21:33:09,775] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+[2021-09-08 21:33:09,778] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/context.py", line 277, in _Popen
+    return Popen(process_obj)
+[2021-09-08 21:33:09,779] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+[2021-09-08 21:33:09,779] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/popen_fork.py", line 75, in _launch
+    code = process_obj._bootstrap(parent_sentinel=child_r)
+[2021-09-08 21:33:09,781] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+[2021-09-08 21:33:09,782] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+[2021-09-08 21:33:09,782] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 370, in _run_processor_manager
+    processor_manager.start()
+[2021-09-08 21:33:09,783] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 610, in start
+    return self._run_parsing_loop()
+[2021-09-08 21:33:09,784] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 686, in _run_parsing_loop
+    self.start_new_processes()
+[2021-09-08 21:33:09,784] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 1031, in start_new_processes
+    processor.start()
+[2021-09-08 21:33:09,785] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 203, in start
+    process.start()
+[2021-09-08 21:33:09,786] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+[2021-09-08 21:33:09,786] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/context.py", line 277, in _Popen
+    return Popen(process_obj)
+[2021-09-08 21:33:09,787] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+[2021-09-08 21:33:09,788] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/popen_fork.py", line 75, in _launch
+    code = process_obj._bootstrap(parent_sentinel=child_r)
+[2021-09-08 21:33:09,788] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+[2021-09-08 21:33:09,788] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+[2021-09-08 21:33:09,789] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 164, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+[2021-09-08 21:33:09,790] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+[2021-09-08 21:33:09,790] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/processor.py", line 613, in process_file
+    self.log.info("Processing file %s for tasks to queue", file_path)
+[2021-09-08 21:33:09,791] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+[2021-09-08 21:33:09,792] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+[2021-09-08 21:33:09,792] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+[2021-09-08 21:33:09,793] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+[2021-09-08 21:33:09,793] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+[2021-09-08 21:33:09,795] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/log/file_processor_handler.py", line 67, in emit
+    self.handler.emit(record)
+[2021-09-08 21:33:09,795] {logging_mixin.py:109} WARNING - Message: 'Processing file %s for tasks to queue'
+Arguments: ('/home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py',)
+[2021-09-08 21:33:09,796] {logging_mixin.py:109} INFO - [2021-09-08 21:33:09,796] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:33:09,825] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:33:10,153] {logging_mixin.py:109} INFO - [2021-09-08 21:33:10,153] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-08 21:33:10,164] {logging_mixin.py:109} INFO - [2021-09-08 21:33:10,164] {dag.py:2306} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-09-08 21:33:10,177] {processor.py:170} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 0.799 seconds
+[2021-09-08 21:34:12,558] {processor.py:162} INFO - Started process (PID=35) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:34:12,561] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:34:12,564] {logging_mixin.py:109} INFO - [2021-09-08 21:34:12,564] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:34:12,599] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:34:12,982] {logging_mixin.py:109} INFO - [2021-09-08 21:34:12,982] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:35:14,110] {processor.py:162} INFO - Started process (PID=35) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:35:14,112] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:35:14,114] {logging_mixin.py:109} INFO - [2021-09-08 21:35:14,114] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:35:14,133] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:35:15,092] {logging_mixin.py:109} INFO - [2021-09-08 21:35:15,092] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:35:15,093] {logging_mixin.py:109} WARNING - Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0x7fa06a3174c0>
+[2021-09-08 21:35:15,094] {logging_mixin.py:109} WARNING - Traceback (most recent call last):
+[2021-09-08 21:35:15,095] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/weakref.py", line 345, in remove
+[2021-09-08 21:35:15,096] {logging_mixin.py:109} WARNING -     def remove(k, selfref=ref(self)):
+[2021-09-08 21:35:15,096] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 586, in _exit_gracefully
+[2021-09-08 21:35:15,097] {logging_mixin.py:109} WARNING -     self.log.debug("Current Stacktrace is: %s", '\n'.join(map(str, inspect.stack())))
+[2021-09-08 21:35:15,099] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 1526, in stack
+[2021-09-08 21:35:15,100] {logging_mixin.py:109} WARNING -     return getouterframes(sys._getframe(1), context)
+[2021-09-08 21:35:15,100] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 1503, in getouterframes
+[2021-09-08 21:35:15,101] {logging_mixin.py:109} WARNING -     frameinfo = (frame,) + getframeinfo(frame, context)
+[2021-09-08 21:35:15,102] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 1477, in getframeinfo
+[2021-09-08 21:35:15,103] {logging_mixin.py:109} WARNING -     lines, lnum = findsource(frame)
+[2021-09-08 21:35:15,104] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 792, in findsource
+[2021-09-08 21:35:15,105] {logging_mixin.py:109} WARNING -     module = getmodule(object, file)
+[2021-09-08 21:35:15,105] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 754, in getmodule
+[2021-09-08 21:35:15,106] {logging_mixin.py:109} WARNING -     os.path.realpath(f)] = module.__name__
+[2021-09-08 21:35:15,107] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/posixpath.py", line 391, in realpath
+[2021-09-08 21:35:15,108] {logging_mixin.py:109} WARNING -     path, ok = _joinrealpath(filename[:0], filename, {})
+[2021-09-08 21:35:15,108] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/posixpath.py", line 425, in _joinrealpath
+[2021-09-08 21:35:15,109] {logging_mixin.py:109} WARNING -     if not islink(newpath):
+[2021-09-08 21:35:15,109] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/posixpath.py", line 167, in islink
+[2021-09-08 21:35:15,110] {logging_mixin.py:109} WARNING -     st = os.lstat(path)
+[2021-09-08 21:35:15,111] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 586, in _exit_gracefully
+[2021-09-08 21:35:15,111] {logging_mixin.py:109} WARNING -     self.log.debug("Current Stacktrace is: %s", '\n'.join(map(str, inspect.stack())))
+[2021-09-08 21:35:15,112] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 1526, in stack
+[2021-09-08 21:35:15,113] {logging_mixin.py:109} WARNING -     return getouterframes(sys._getframe(1), context)
+[2021-09-08 21:35:15,113] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 1503, in getouterframes
+[2021-09-08 21:35:15,114] {logging_mixin.py:109} WARNING -     frameinfo = (frame,) + getframeinfo(frame, context)
+[2021-09-08 21:35:15,115] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 1477, in getframeinfo
+[2021-09-08 21:35:15,116] {logging_mixin.py:109} WARNING -     lines, lnum = findsource(frame)
+[2021-09-08 21:35:15,116] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 792, in findsource
+[2021-09-08 21:35:15,117] {logging_mixin.py:109} WARNING -     module = getmodule(object, file)
+[2021-09-08 21:35:15,118] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.8/inspect.py", line 745, in getmodule
+[2021-09-08 21:35:15,119] {logging_mixin.py:109} WARNING -     if ismodule(module) and hasattr(module, '__file__'):
+[2021-09-08 21:35:15,119] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/dag_processing/manager.py", line 590, in _exit_gracefully
+[2021-09-08 21:35:15,120] {logging_mixin.py:109} WARNING -     sys.exit(os.EX_OK)
+[2021-09-08 21:35:15,120] {logging_mixin.py:109} WARNING - SystemExit: 0
+[2021-09-08 21:35:15,202] {logging_mixin.py:109} INFO - [2021-09-08 21:35:15,201] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-08 21:35:15,212] {logging_mixin.py:109} INFO - [2021-09-08 21:35:15,212] {dag.py:2306} INFO - Setting next_dagrun for example_dag_decorator to None
+[2021-09-08 21:35:15,223] {processor.py:170} INFO - Processing /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py took 1.117 seconds
+[2021-09-08 21:36:05,740] {processor.py:162} INFO - Started process (PID=35) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:36:05,743] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:36:05,745] {logging_mixin.py:109} INFO - [2021-09-08 21:36:05,745] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:36:05,769] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:36:06,868] {logging_mixin.py:109} INFO - [2021-09-08 21:36:06,868] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:36:35,232] {processor.py:162} INFO - Started process (PID=34) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:36:35,234] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:36:35,236] {logging_mixin.py:109} INFO - [2021-09-08 21:36:35,236] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:36:35,821] {logging_mixin.py:109} INFO - [2021-09-08 21:36:35,821] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:36:51,180] {processor.py:162} INFO - Started process (PID=36) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:36:51,189] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:36:51,191] {logging_mixin.py:109} INFO - [2021-09-08 21:36:51,191] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:36:51,219] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:36:52,332] {logging_mixin.py:109} INFO - [2021-09-08 21:36:52,331] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:38:09,863] {processor.py:162} INFO - Started process (PID=35) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:38:09,865] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:38:09,866] {logging_mixin.py:109} INFO - [2021-09-08 21:38:09,866] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:38:09,887] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:38:11,296] {logging_mixin.py:109} INFO - [2021-09-08 21:38:11,296] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:39:44,210] {processor.py:162} INFO - Started process (PID=37) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:39:44,214] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:39:44,216] {logging_mixin.py:109} INFO - [2021-09-08 21:39:44,216] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:39:44,652] {logging_mixin.py:109} INFO - [2021-09-08 21:39:44,652] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:40:26,596] {processor.py:162} INFO - Started process (PID=38) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:40:26,599] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:40:26,600] {logging_mixin.py:109} INFO - [2021-09-08 21:40:26,600] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:40:26,625] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:40:27,717] {logging_mixin.py:109} INFO - [2021-09-08 21:40:27,717] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:41:12,841] {processor.py:162} INFO - Started process (PID=34) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:41:12,844] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:41:12,846] {logging_mixin.py:109} INFO - [2021-09-08 21:41:12,845] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:41:12,870] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:41:14,123] {logging_mixin.py:109} INFO - [2021-09-08 21:41:14,123] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:41:56,122] {processor.py:162} INFO - Started process (PID=36) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:41:56,127] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:41:56,129] {logging_mixin.py:109} INFO - [2021-09-08 21:41:56,129] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:41:56,159] {processor.py:623} INFO - DAG(s) dict_keys(['example_dag_decorator']) retrieved from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:41:56,787] {logging_mixin.py:109} INFO - [2021-09-08 21:41:56,787] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:42:41,839] {processor.py:162} INFO - Started process (PID=36) to work on /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:42:41,841] {processor.py:613} INFO - Processing file /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2021-09-08 21:42:41,843] {logging_mixin.py:109} INFO - [2021-09-08 21:42:41,843] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags/example_dag_decorator.py
+[2021-09-08 21:42:42,174] {logging_mixin.py:109} INFO - [2021-09-08 21:42:42,174] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
+[2021-09-08 21:42:42,193] {logging_mixin.py:109} INFO - [2021-09-08 21:42:42,193] {process_utils.py:207} INFO - Waiting up to 5 seconds for processes to exit...
