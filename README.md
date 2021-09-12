@@ -40,3 +40,6 @@ echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
 bash run_docker.sh
 ~~~
 
+
+В postgres_collect_data в директории pgdata_collect_data удалить файл .gitkeep - иначе не запустится БД. Этот файл я создавал для того, чтобы в GIT загрузились пустые директории.
+
